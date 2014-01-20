@@ -4,8 +4,9 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using Versaler.Model;
 
-namespace WebApplication1
+namespace Versaler
 {
     public partial class _default : System.Web.UI.Page
     {
@@ -13,5 +14,11 @@ namespace WebApplication1
         {
 
         }
+        protected void Button_Onclick(object sender, EventArgs e)
+        {
+            //string message = TextBox.Text;
+           TextBox.Text.GetNumberOfCapitals();
+        }
+        
     }
 }
