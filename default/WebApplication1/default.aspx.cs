@@ -17,8 +17,9 @@ namespace Versaler
         protected void Button_Onclick(object sender, EventArgs e)
         {
             //string message = TextBox.Text;
-           TextBox.Text.GetNumberOfCapitals();
+           Response.Text = TextBox.Text.GetNumberOfCapitals().ToString();
         }
+
         
     }
 }
