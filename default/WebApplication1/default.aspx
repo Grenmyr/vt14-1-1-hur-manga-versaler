@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="default.aspx.cs" Inherits="Versaler._default" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="default.aspx.cs" Inherits="Versaler._default" ViewStateMode ="Disabled"%>
 
 <!DOCTYPE html>
 
@@ -9,7 +9,7 @@
 <body>
     <form id="form1" runat="server">
     <div>
-        
+        <h1>Hur många versaler?</h1>
         <asp:TextBox ID="TextBox" runat="server"></asp:TextBox>
         <asp:Button ID="Button" runat="server" Text="Button" OnClick="Button_Onclick" />
         <asp:Label ID="Response" runat="server" Text="Label"></asp:Label>
