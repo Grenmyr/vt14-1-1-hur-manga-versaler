@@ -11,9 +11,11 @@
     <div>
         <h1>Hur många versaler?</h1>
         <asp:TextBox ID="TextBox" runat="server"></asp:TextBox>
-        <asp:Button ID="Button" runat="server" Text="Button" OnClick="Button_Onclick" />
-        <asp:Label ID="Response" runat="server" Text="Label"></asp:Label>
-    </div>
+        <asp:Button ID="SubmitButton" runat="server" Text="Submit" OnClick="SubmitButton_Onclick" />
+        <asp:Button ID="ResetButton" runat="server" Text="Reset"  Visible="false" />
+        <asp:Label ID="Response" runat="server" Text="Label" Visible="false"></asp:Label>  
+             
+    </div>      
     </form>
 </body>
 </html>
