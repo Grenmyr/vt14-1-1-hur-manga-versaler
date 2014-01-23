@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="default.aspx.cs" Inherits="Versaler._default" ViewStateMode ="Disabled"%>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="default.aspx.cs" Inherits="Versaler._default" ViewStateMode="Disabled" %>
 
 <!DOCTYPE html>
 
@@ -8,14 +8,15 @@
 </head>
 <body>
     <form id="form1" runat="server">
-    <div>
-        <h1>Hur många versaler?</h1>
-        <asp:TextBox ID="TextBox" runat="server"></asp:TextBox>
-        <asp:Button ID="SubmitButton" runat="server" Text="Submit" OnClick="SubmitButton_Onclick" />
-        <asp:Button ID="ResetButton" runat="server" Text="Reset"  Visible="false" />
-        <asp:Label ID="Response" runat="server" Text="Label" Visible="false"></asp:Label>  
-             
-    </div>      
+        <div>
+            <h1>Hur många versaler?</h1>
+            <asp:TextBox ID="TextBox" runat="server"></asp:TextBox>
+            <asp:Button ID="SubmitButton" runat="server" Text="Skicka" OnClick="SubmitButton_Onclick" />
+            <asp:PlaceHolder ID="PlaceHolder1" runat="server" Visible="false">
+                <asp:Button ID="ResetButton" runat="server" Text="Återställ"  />
+                <asp:Label ID="Response" runat="server" Text="Label" ></asp:Label>
+            </asp:PlaceHolder>
+        </div>
     </form>
 </body>
 </html>
